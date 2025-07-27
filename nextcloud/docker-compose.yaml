@@ -1,0 +1,11 @@
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - /home/huwencan/workspace/docker/nextcloud/data:/var/www/html
+      - /home/huwencan/workspace/docker/nextcloud/config/ports.conf:/etc/apache2/ports.conf:ro
+    security_opt:
+      - no-new-privileges:true
