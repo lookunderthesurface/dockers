@@ -14,7 +14,7 @@ docker run --gpus all -it --network host --shm-size=8g --name torch pytorch/pyto
 ```
 实例中配置代理 
 ```bash
-export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890
+git config --global http.proxy http://127.0.0.1:7897 && git config --global https.proxy http://127.0.0.1:7897
 ```
 宿主机开放显示器
 ```bash

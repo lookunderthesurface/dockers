@@ -1,5 +1,5 @@
 # clash
-祖传clash
+clash verge
 
 # linux
 输入法，安装完重启，设置字体大小
